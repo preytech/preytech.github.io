@@ -5,8 +5,16 @@ module.exports = {
   ],
   theme: {
     colors: {
-      main: "#113150",
-      text: "#FFFFFF"
+      main: "",
+      text: "",
+      borderColor: "#888888"
+    },
+    fontFamily: {
+      almarai: []
+    },
+
+    width: {
+      standart: "1600px"
     },
     extend: {},
   },

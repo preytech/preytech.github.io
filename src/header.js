@@ -6,17 +6,19 @@ const links = [
         url: "/",
     },
     {
-        text: "Наши врачи",
+        text: "Врачи",
         url: "/",
     },
     {
-    },
-    {
-        text: "Отзывы",
+        text: "О нас",
         url: "/contacts",
     },
     {
-        text: "О нас",
+        text: "Отзывы",
+        url: "/about",
+    },
+    {
+        text: "Контакты",
         url: "/about",
     },
 ];
@@ -27,16 +29,16 @@ function Header()
         return <Link text={elem.text} url={elem.url} key={i} />
     });
     return(
-        <header>
-            <div className='flex '>
-                <img src = {logo}/>
-                <p className='text-text font-lato text-2xl'>DENTIQUE</p>
+        <header className = "flex border-b border-borderColor px-16 py-2">
+            <div className = "flex w-1/4">
+                <img src = {logo} alt = ""/>
+                <p className = "text-2xl">DENTIQUE</p>
             </div>
-            <nav>
+            <nav className = "flex justify-around w-2/4">
                 {linksJsx}
             </nav>
-            <div>
-
+            <div className = "w-1/4">
+                <button>Записаться</button>
             </div>
         </header>
     );
