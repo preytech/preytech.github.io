@@ -4,19 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
-      main: "",
-      text: "",
-      borderColor: "#888888"
+    extend: {
+      fontFamily: {
+        "Bold": ["Roboto-Bold"],
+        "Black": ["Roboto-Black"],
+        "Light": ["Roboto-Light"],
+      },
+      colors: {
+        "Blue": "#407BFF"
+      }
     },
-    fontFamily: {
-      almarai: []
-    },
-
-    width: {
-      standart: "1600px"
-    },
-    extend: {},
   },
   plugins: [],
 }

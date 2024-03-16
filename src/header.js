@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import './App.css';
 
 const links = [
     {
@@ -29,16 +30,18 @@ function Header()
         return <Link text={elem.text} url={elem.url} key={i} />
     });
     return(
-        <header className = "flex border-b border-borderColor px-16 py-2">
-            <div className = "flex w-1/4">
-                <img src = {logo} alt = ""/>
-                <p className = "text-2xl">DENTIQUE</p>
-            </div>
-            <nav className = "flex justify-around w-2/4">
-                {linksJsx}
-            </nav>
-            <div className = "w-1/4">
-                <button>Записаться</button>
+        <header className = "border-b-[0.1px] border-[#00000020] px-16 py-3 bg-white">
+            <div className='flex justify-between items-center container mx-auto'> 
+                <div className = "flex items-center gap-1.5">
+                    <img className = "w-8" src = {logo} alt = ""/>
+                    <p className = "font-Black text-4xl text-Blue">DENTIQUE</p>
+                </div>
+                <nav className = "flex gap-16">
+                    {linksJsx}
+                </nav>
+                <div className = "">
+                    <button className = "bg-Blue py-[10px] px-[40px] rounded-[6px]"><p className = "font-Bold text-white">Запись</p></button>
+                </div>
             </div>
         </header>
     );
@@ -46,7 +49,7 @@ function Header()
 
 function Link({text, url}) {
     return (
-        <a className="text-text text-sm font-lato" href={url}>{text}</a>
+        <a href={url}><p className="font-Light text-sm text-[#888888]">{text}</p></a>
     );
 }
 
