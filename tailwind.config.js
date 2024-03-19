@@ -12,6 +12,9 @@ module.exports = {
       },
       colors: {
         "Blue": "#407BFF"
+      },
+      backgroundImage: {
+        'Kid': "url('./images/kid.png')",
       }
     },
   },
