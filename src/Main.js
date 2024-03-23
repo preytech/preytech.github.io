@@ -23,23 +23,20 @@ function Main()
                         <p>Ваша улыбка -</p>
                         <p className = "text-Blue">наш приоритет</p>
                     </div>
-                    <div>
-                        <div className = "flex flex-col gap-[20px] font-Light relative justify-center">
+                        <div className = "w-[200px] flex flex-col gap-[20px] items-center font-Light relative">
                             <button className = "bg-Blue text-white px-12 rounded-lg font-Light">
-                                <p>Акции и</p>
-                                <p>предложения</p> 
+                                <p>Акции и <br />предложения</p>
                             </button>
                             <button className = "border-Blue border rounded-lg px-6 py-1 flex items-center gap-2.5">
                                 <p className = "text-black font-Light">Подробнее</p>
                                 <img src = {Arrow} alt = ""/>
                             </button>
-                                <img className = "absolute bottom-[110px] right-[200px]" src = {BlackMicroStar1} alt = ""/>
-                                <img className = "absolute top-20 right-[185px]" src = {BlueMicroStar1} alt = ""/>
-                                <img className = "absolute left-[190px] top-[70px]" src = {BlueArrow} alt = ""/>
-                            <div className = "relative w-[160px] flex self-center text-sm">
-                                <p className = "font-Light">Начните знакомство с нашей стоматологией выгодно</p>
-                            </div>
+                            <img className = "absolute bottom-[110px] right-[200px]" src = {BlackMicroStar1} alt = ""/>
+                            <img className = "absolute top-20 right-[185px]" src = {BlueMicroStar1} alt = ""/>
+                            <img className = "absolute left-[190px] top-[70px]" src = {BlueArrow} alt = ""/>
                         </div>
+                    <div className = "relative w-[160px] flex self-center text-sm">
+                        <p className = "font-Light">Начните знакомство с нашей стоматологией выгодно</p>
                     </div>
                 </div>            
                 <div className = "relative">
