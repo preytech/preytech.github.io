@@ -11,7 +11,12 @@ module.exports = {
         "Light": ["Roboto-Light"],
       },
       colors: {
-        "Blue": "#407BFF"
+        "Blue": "#407BFF",
+        "Gray": "#888888",
+        "Gray2": "#616161",
+        "Gray3": "#5A7184",
+        "Trans76": "#FFFFFF76",
+        "Trans20": "#00000020"
       },
       backgroundImage: {
         'Kid': "url('./images/kid.png')",

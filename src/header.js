@@ -30,7 +30,7 @@ function Header()
         return <Link text={elem.text} url={elem.url} key={i} />
     });
     return(
-        <header className = "border-b-[0.1px] border-[#00000020] px-16 py-3 bg-white">
+        <header className = "border-b border-Trans20 px-16 py-3 bg-white">
             <div className='flex justify-between items-center container mx-auto'> 
                 <div className = "flex items-center gap-1.5">
                     <img className = "w-8" src = {logo} alt = ""/>
@@ -49,7 +49,7 @@ function Header()
 
 function Link({text, url}) {
     return (
-        <a href={url}><p className="font-Light text-sm text-[#888888]">{text}</p></a>
+        <a href={url}><p className="font-Light text-sm text-Gray">{text}</p></a>
     );
 }
 

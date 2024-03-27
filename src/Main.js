@@ -1,4 +1,5 @@
 import Header from './header';
+import Cards from './SalesCards';
 import Arrow from "./images/mainButtonArrow.svg";
 import Kid from "./images/kid.png";
 import Circle from "./images/blackCircle.svg";
@@ -20,7 +21,7 @@ function Main()
     return(
         <div className="bg-[#F9F9FA]">
             <Header />
-            <p className = "container mx-auto text-[#888888] font-Light">Стоматологические услуги по бюджетным ценам</p>
+            <p className = "container mx-auto text-Gray font-Light">Стоматологические услуги по бюджетным ценам</p>
             <div className = "flex justify-between container mx-auto py-5">
                 <div className = "flex flex-col justify-center gap-12">
                     <div className = "font-Black text-8xl flex flex-col gap-[30px]">
@@ -56,18 +57,22 @@ function Main()
             <div className = "bg-[#151516] rounded-xl w-full container mx-auto text-white flex justify-between py-8 px-20 relative">
                 <div className = "flex flex-col gap-5 items-center w-full">
                     <p className = "text-5xl font-Bold">12000+</p>
-                    <p className = "text-[#FFFFFF76] font-Light">Проведённых процедур</p>
+                    <p className = "text-Trans76 font-Light">Проведённых процедур</p>
                 </div>
                 <div className = "flex flex-col gap-5 items-center border-x-2 border-[#FFFFFF24] w-full">
                     <p className = "text-5xl font-Bold">4,6+</p>
-                    <p className = "text-[#FFFFFF76] font-Light">Средняя оценка</p>
+                    <p className = "text-Trans76 font-Light">Средняя оценка</p>
                 </div>
                 <div className = "flex flex-col gap-5 items-center w-full">
                     <p className = "text-5xl font-Bold">600+</p>
-                    <p className = "text-[#FFFFFF76] font-Light">Довольных клиенов</p>
+                    <p className = "text-Trans76 font-Light">Довольных клиенов</p>
                 </div>
                 <img className = "absolute left-0 top-0" src = {LeftWaves} alt = "бля.."/>
                 <img className = "absolute right-0 top-0" src = {RightWaves} alt = "бля.."/>
+            </div>
+            <div className = "pt-32 flex flex-col items-center">
+                <p className = "font-Black text-Black text-6xl pb-10">Акции и предложения</p>
+                <Cards/>
             </div>
         </div>
     );
