@@ -1,6 +1,6 @@
 import Header from './header';
 import Cards from './SalesCards';
-import Arrow from "./images/mainButtonArrow.svg";
+
 import Kid from "./images/kid.png";
 import Circle from "./images/blackCircle.svg";
 import WhiteStar from "./images/whiteStar1.svg";
@@ -16,6 +16,9 @@ import RightWaves from "./images/rightWaves.svg";
 import BlueMicroStar1 from "./images/blueMicroStar1.svg";
 import './App.css';
 
+import { BlueButton } from './components';
+import { WhiteButton } from './components';
+
 function Main()
 {
     return(
@@ -29,18 +32,13 @@ function Main()
                         <p className = "text-Blue">наш приоритет</p>
                     </div>
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
-                            <button className = "bg-Blue text-white px-8 py-2 rounded-lg font-Light">
-                                <p>Акции и предложения</p>
-                            </button>
-                            <button className = "border-Blue border rounded-lg px-6 py-1 flex items-center gap-2.5">
-                                <p className = "text-black font-Light">Подробнее</p>
-                                <img src = {Arrow} alt = ""/>
-                            </button>
+                            <BlueButton text = "Каталог услуг" font = "Light"/>
+                            <WhiteButton text = "Подробнее" font = "Light"/>
                             <img className = "absolute bottom-[100px] right-[240px]" src = {BlackMicroStar1} alt = ""/>
                             <img className = "absolute top-20 right-[210px]" src = {BlueMicroStar1} alt = ""/>
                             <img className = "absolute left-[210px] top-[70px]" src = {BlueArrow} alt = ""/>
                         </div>
-                    <div className = "relative w-[160px] flex self-center text-sm relative">
+                    <div className = "relative w-[160px] flex self-center text-sm">
                         <p className = "font-Light">Начните знакомство с нашей стоматологией выгодно</p>
                         <img className = "absolute right-[30px] bottom-[57px]" src = {BlackMicroStar2} alt = ""/>
                         <img className = "absolute bottom-[7px] right-[165px]" src = {BlueMiniStar2} alt = ""/>

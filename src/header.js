@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { BlueButton } from './components';
 
 const links = [
     {
@@ -39,9 +40,7 @@ function Header()
                 <nav className = "flex gap-16">
                     {linksJsx}
                 </nav>
-                <div className = "">
-                    <button className = "bg-Blue py-[10px] px-[40px] rounded-[6px]"><p className = "font-Bold text-white">Запись</p></button>
-                </div>
+                <BlueButton text = "Запись" font = "Bold"/>
             </div>
         </header>
     );
