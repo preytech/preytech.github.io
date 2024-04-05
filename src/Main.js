@@ -35,7 +35,7 @@ function Main()
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
                             <Button text = "Каталог услуг" font = "Light" isBlue = "yes"/>
                             <Button text = "Подробнее" font = "Light" arrow = {Arrow}/>
-                            <AbsoluteImg img = {BlackMicroStar1} bottom = "28" right = "56"/>
+                            <AbsoluteImg img = {BlackMicroStar1}  left = "[10px]" bottom = "28"/>
                             <img className = "absolute top-20 right-[210px]" src = {BlueMicroStar1} alt = ""/>
                             <img className = "absolute left-[210px] top-[70px]" src = {BlueArrow} alt = ""/>
                         </div>

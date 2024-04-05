@@ -26,9 +26,6 @@ const links = [
 
 function Header()
 {
-    const linksJsx = links.map((elem, i) => {
-        return <Link text={elem.text} url={elem.url} key={i} />
-    });
     return(
         <header className = "border-b border-Trans20 px-16 py-3 bg-white">
             <div className='flex justify-between items-center container mx-auto'> 
@@ -37,7 +34,7 @@ function Header()
                     <p className = "font-Black text-4xl text-Blue">DENTIQUE</p>
                 </div>
                 <nav className = "flex gap-16">
-                    {linksJsx}
+                    {links.map((elem, i) => { return <Link text = {elem.text} url = {elem.url} key = {i}/>})}
                 </nav>
                 <Button text = "Запись" font = "Bold" isBlue = "yes"/>
             </div>
