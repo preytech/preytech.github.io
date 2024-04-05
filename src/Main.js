@@ -1,5 +1,5 @@
-import Header from './header';
-import Cards from './SalesCards';
+import Header from './components/header';
+import Cards from "./components/SalesCards";
 
 import Kid from "./images/kid.png";
 import Circle from "./images/blackCircle.svg";
@@ -12,12 +12,13 @@ import BlackMicroStar1 from "./images/blackMicroStar1.svg";
 import BlackMicroStar2 from "./images/blackMicroStar2.svg";
 import LeftWaves from "./images/leftWaves.svg";
 import RightWaves from "./images/rightWaves.svg";
-
 import BlueMicroStar1 from "./images/blueMicroStar1.svg";
+import Arrow from "./images/mainButtonArrow.svg";
+import BigBlackStar from "./images/blackBigStar.svg";
+
 import './App.css';
 
-import { BlueButton } from './components';
-import { WhiteButton } from './components';
+import { Button, AbsoluteImg } from './components/lilcoms';
 
 function Main()
 {
@@ -32,9 +33,9 @@ function Main()
                         <p className = "text-Blue">наш приоритет</p>
                     </div>
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
-                            <BlueButton text = "Каталог услуг" font = "Light"/>
-                            <WhiteButton text = "Подробнее" font = "Light"/>
-                            <img className = "absolute bottom-[100px] right-[240px]" src = {BlackMicroStar1} alt = ""/>
+                            <Button text = "Каталог услуг" font = "Light" isBlue = "yes"/>
+                            <Button text = "Подробнее" font = "Light" arrow = {Arrow}/>
+                            <AbsoluteImg img = {BlackMicroStar1} bottom = "28" right = "56"/>
                             <img className = "absolute top-20 right-[210px]" src = {BlueMicroStar1} alt = ""/>
                             <img className = "absolute left-[210px] top-[70px]" src = {BlueArrow} alt = ""/>
                         </div>
@@ -68,8 +69,11 @@ function Main()
                 <img className = "absolute left-0 top-0" src = {LeftWaves} alt = "бля.."/>
                 <img className = "absolute right-0 top-0" src = {RightWaves} alt = "бля.."/>
             </div>
-            <div className = "pt-32 flex flex-col items-center">
-                <p className = "font-Black text-Black text-6xl pb-10">Акции и предложения</p>
+            <div className = "pt-40 flex flex-col items-center">
+                <p className = "font-Black text-Black text-6xl pb-10 relative">
+                    Акции и предложения
+                    <img className = "absolute bottom-28 left-64" src = {BigBlackStar} alt = ""/>
+                </p>
                 <Cards/>
             </div>
         </div>

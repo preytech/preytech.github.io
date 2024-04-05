@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import { BlueButton } from './components';
+import logo from '../logo.svg';
+import { Button } from './lilcoms';
 
 const links = [
     {
@@ -40,16 +39,14 @@ function Header()
                 <nav className = "flex gap-16">
                     {linksJsx}
                 </nav>
-                <BlueButton text = "Запись" font = "Bold"/>
+                <Button text = "Запись" font = "Bold" isBlue = "yes"/>
             </div>
         </header>
     );
 }
 
 function Link({text, url}) {
-    return (
-        <a href={url}><p className="font-Light text-sm text-Gray">{text}</p></a>
-    );
+    return <a href={url} className = "font-Light text-sm text-Gray">{text}</a>
 }
 
 export default Header;

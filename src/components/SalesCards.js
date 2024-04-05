@@ -1,6 +1,9 @@
-import WhiteMicroStar from "./images/whiteMicroStar1.svg";
+import WhiteMicroStar from "../images/whiteMicroStar1.svg";
+import CheckIcon from "../images/checkIcon.svg";
+import Arrow from "../images/mainButtonArrow.svg";
+import WhiteArrow from "../images/whiteButtonArrow.svg";
 
-import { WhiteButton } from "./components";
+import { Button, AbsoluteImg } from "./lilcoms";
 
 function Cards()
 {
@@ -19,8 +22,8 @@ function Cards()
                 priceNoDiscount = "2999"
                 priceDiscount = "1499"
                 name = "Профессиональная диагностика полости рта"
-                desc = "Помимо ежедневной чистки зубов она заключается в своевременном выявлении заболевания"
-                list1 = "Осмотр ротовой полости стоматологом"
+                desc = "Ежедневная чистка зубов и своевременное выявление заболевания"
+                list1 = "Осмотр ротовой полости"
                 list2 = "3D цифровая рентгенодиагностика (КТ)"
                 list3 = "Профессиональная гигиена полости рта AIR Flow"
                 isBlue = "ss"
@@ -29,8 +32,8 @@ function Cards()
                 priceNoDiscount = "7999"
                 priceDiscount = "4799"
                 name = "Лечение кариеса под увеличением"
-                desc = "Наши стоматологи спасают 90% зубов, которые рекомендовали удалить в других клиниках"
-                list1 = "Терапевты используют изоляцию зубов при помощи коффердама"
+                desc = "Спасаем 90% зубов, которые рекомендовали удалить в других клиниках"
+                list1 = "Изоляция зубов коффердамом"
                 list2 = "Пломбировочные материалы последнего поколения"
                 list3 = "Терапевт лечит кариес, пульпит, периодонтитции"
             />
@@ -47,16 +50,22 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
         });
 
     let blueBlock;
+    let button = <Button text = "Запись" font = "Bold" arrow = {Arrow}/>;
+    let borderColor = "Trans20";
+
     if (isBlue)
     {
-        blueBlock = <div className = "bg-Blue text-white font-Bold rounded-xl text-2xl text-center relative w-full py-2.5">
+        blueBlock = <div className = "bg-Blue text-white font-Bold border border-Blue rounded-xl text-2xl text-center relative w-full py-2.5">
             Лучшая цена!
-            <img src = {WhiteMicroStar} alt = "" className = "absolute"/>
+            <AbsoluteImg img = {WhiteMicroStar} top = "1" right = "20"/>
         </div>
+
+        button = <Button text = "Запись" font = "Bold" isBlue = "yes" arrow = {WhiteArrow}/>;
+        borderColor = "Blue";
     }
 
     return(
-        <div className = "border border-Trans20 rounded-xl">
+        <div className = {"border rounded-xl border-" + borderColor}>
             <div>
                 {blueBlock}
             </div>
@@ -69,13 +78,13 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
                     <p className = "font-Bold text-2xl text-center">{name}</p>
                     <p className = "font-Light text-Gray3 text-sm border-b border-Trans20 pb-2.5">{desc}</p>
                 </div>
-                <ol className = "font-Light text-Gray3 list-image-[url(./images/checkIcon.svg)] ml-10 py-6 text-sm w-60">
-                    <li>{list1}</li>
-                    <li>{list2}</li>
-                    <li>{list3}</li>
-                </ol>
+                <div className = "font-Light text-Gray3 ml-10 py-6 text-sm w-60 flex flex-col gap-2">  
+                    <ListElem text = {list1}/>
+                    <ListElem text = {list2}/>
+                    <ListElem text = {list3}/>
+                </div>
                 <div className = "w-full flex justify-center">
-                    <WhiteButton text = "Запись" font = "Bold"/>
+                    {button}
                 </div>
             </div>
 
@@ -83,5 +92,14 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
     );
 }
 
+function ListElem({text})
+{
+    return(
+        <div className = "flex gap-2 items-start">
+            <img className = "w-5" src = {CheckIcon} alt=""/>
+            {text}
+        </div>
+    );
+}
 
 export default Cards;
