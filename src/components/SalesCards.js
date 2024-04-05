@@ -3,7 +3,7 @@ import CheckIcon from "../images/checkIcon.svg";
 import Arrow from "../images/mainButtonArrow.svg";
 import WhiteArrow from "../images/whiteButtonArrow.svg";
 
-import { Button, AbsoluteImg } from "./lilcoms";
+import { Button } from "./lilcoms";
 
 function Cards()
 {
@@ -57,7 +57,6 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
     {
         blueBlock = <div className = "bg-Blue text-white font-Bold border border-Blue rounded-xl text-2xl text-center relative w-full py-2.5">
             Лучшая цена!
-            <AbsoluteImg img = {WhiteMicroStar} top = "1" right = "20"/>
             <img src = {WhiteMicroStar} className = "absolute top-1 right-20" alt = ""/>
         </div>
 

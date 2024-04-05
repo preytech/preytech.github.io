@@ -20,13 +20,3 @@ export function Button({text, font, isBlue, arrow})
         </button>
   );
 }
-
-export function AbsoluteImg({img, top, left, right, bottom})
-{
-    top = "top-" + top;
-    left = " left-" + left;
-    right = " right-" + right;
-    bottom = " bottom-" + bottom;
-
-    return <img src = {img} className = {"absolute " + top +  left + right + bottom}s alt = ""/> //Я мало знаю про разработчика javascript, но я много знаю про его родителей, например то, что они мертвы
-}

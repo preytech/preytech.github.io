@@ -18,7 +18,7 @@ import BigBlackStar from "./images/blackBigStar.svg";
 
 import './App.css';
 
-import { Button, AbsoluteImg } from './components/lilcoms';
+import { Button } from './components/lilcoms';
 
 function Main()
 {
@@ -35,9 +35,9 @@ function Main()
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
                             <Button text = "Каталог услуг" font = "Light" isBlue = "yes"/>
                             <Button text = "Подробнее" font = "Light" arrow = {Arrow}/>
-                            <AbsoluteImg img = {BlackMicroStar1}  left = "[10px]" bottom = "28"/>
-                            <img className = "absolute top-20 right-[210px]" src = {BlueMicroStar1} alt = ""/>
-                            <img className = "absolute left-[210px] top-[70px]" src = {BlueArrow} alt = ""/>
+                            <img className = "absolute bottom-28 left-3.5" src = {BlackMicroStar1} alt = ""/>
+                            <img className = "absolute top-20 right-56" src = {BlueMicroStar1} alt = ""/>
+                            <img className = "absolute left-56 top-20" src = {BlueArrow} alt = ""/>
                         </div>
                     <div className = "relative w-[160px] flex self-center text-sm">
                         <p className = "font-Light">Начните знакомство с нашей стоматологией выгодно</p>
