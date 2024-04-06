@@ -1,7 +1,8 @@
 import Header from './components/header';
 import Cards from "./components/SalesCards";
+import Advantages from './components/advantages';
 
-import Kid from "./images/kid.png";
+import Kid from "./images/kid.webp";
 import Circle from "./images/blackCircle.svg";
 import WhiteStar from "./images/whiteStar1.svg";
 import BlackMiniStar from "./images/blackMiniStar1.svg";
@@ -15,6 +16,13 @@ import RightWaves from "./images/rightWaves.svg";
 import BlueMicroStar1 from "./images/blueMicroStar1.svg";
 import Arrow from "./images/mainButtonArrow.svg";
 import BigBlackStar from "./images/blackBigStar.svg";
+import Phone from "./images/phone.svg";
+import Mail from "./images/mail.svg";
+import Geo from "./images/geo.svg";
+import Twitter from "./images/twitter.svg";
+import Instagram from "./images/instagram.svg";
+import Discord from "./images/discord.svg";
+import MegaWaves from "./images/megaWaves.svg";
 
 import './App.css';
 
@@ -76,6 +84,74 @@ function Main()
                 </p>
                 <Cards/>
             </div>
+            <div className = "pt-40 flex flex-col items-center">
+                <p className = "font-Black text-Black text-6xl pb-10">
+                    Почему люди выбирают нас?
+                </p>
+                <Advantages/>
+            </div>
+            <div className = "py-40 flex flex-col items-center">
+                <p className = "font-Black text-Black text-6xl pb-10">
+                    Свяжитесь с нами!
+                </p>
+                <div className = "border border-Trans20 rounded-xl flex p-2">
+                    <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative">
+                        <div className = "font-Light text-white flex flex-col gap-10">
+                            <p className = "text-4xl">Контактная информация</p>
+                            <Contacts image = {Phone} text = "8 800 555 35 35"/>
+                            <Contacts image = {Mail} text = "abc@gmail.com"/>
+                            <Contacts image = {Geo} text = "Руставели 33, Санкт-Петербург"/>
+                        </div>
+                        <div className = "flex gap-4">
+                            <img src = {Twitter} alt = ""/>
+                            <img src = {Instagram} alt = ""/>
+                            <img src = {Discord} alt = ""/>
+                        </div>
+                        <img className = "absolute bottom-0 right-0" src = {MegaWaves} alt = ""/>
+                    </div>
+                    <form className = "p-4 flex flex-col justify-center gap-52 items-center">
+                        <div>
+                            <div className = "grid grid-cols-2 grid-rows-2 gap-8 pb-8">
+                                <InputForm text = "Имя" type = "text" placeText = "Олег"/>
+                                <InputForm text = "Фамилия" type = "text" placeText = "Иванов"/>
+                                <InputForm text = "Почта" type = "text" placeText = "abc@gmail.com"/>
+                                <InputForm text = "Номер телефона" type = "text" placeText = "8 800 555 35 35"/>
+                            </div>
+                            <InputForm text = "Сообщение" type = "text" placeText = "Напишите ваше сообщение" w = "full" h = "10"/>
+                        </div>
+                        <input className = "px-10 flex items-center py-2.5 font-Light bg-Blue rounded-md text-white" type = "submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Contacts({image, text})
+{
+    return(
+        <div className = "flex gap-3">
+            <img src = {image} alt = ""/>
+            <p className = "font-Light">{text}</p>
+        </div>
+    );
+}
+
+function InputForm({text, type, placeText, w, h})
+{
+    let width = "72";
+    let height = "10";
+
+    if (w && h)
+    {
+        width = w;
+        height = h;
+    }
+
+    return(
+        <div className = "flex flex-col gap-2">
+            <label>{text}</label>
+            <input className = {"border border-Trans20 w-" + width + " h-" + height + " rounded-md placeholder:font-Light placeholder:text-Gray3 placeholder:pl-2"} type = {type} placeholder = {placeText} />
         </div>
     );
 }
