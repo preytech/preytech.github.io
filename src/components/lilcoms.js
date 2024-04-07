@@ -20,3 +20,13 @@ export function Button({text, font, isBlue, arrow})
         </button>
   );
 }
+
+export function Contacts({image, text})
+{
+    return(
+        <div className = "flex gap-3">
+            <img src = {image} alt = ""/>
+            <p className = "font-Light">{text}</p>
+        </div>
+    );
+}

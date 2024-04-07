@@ -1,6 +1,7 @@
 import Header from './components/header';
 import Cards from "./components/SalesCards";
 import Advantages from './components/advantages';
+import Footer from "./components/footer";
 
 import Kid from "./images/kid.webp";
 import Circle from "./images/blackCircle.svg";
@@ -22,16 +23,15 @@ import Geo from "./images/geo.svg";
 import Twitter from "./images/twitter.svg";
 import Instagram from "./images/instagram.svg";
 import Discord from "./images/discord.svg";
-import MegaWaves from "./images/megaWaves.svg";
 
 import './App.css';
 
-import { Button } from './components/lilcoms';
+import { Button, Contacts } from './components/lilcoms';
 
 function Main()
 {
     return(
-        <div className="bg-[#F9F9FA]">
+        <main className="bg-[#F9F9FA]">
             <Header />
             <p className = "container mx-auto text-Gray font-Light">Стоматологические услуги по бюджетным ценам</p>
             <div className = "flex justify-between container mx-auto py-5">
@@ -94,8 +94,8 @@ function Main()
                 <p className = "font-Black text-Black text-6xl pb-10">
                     Свяжитесь с нами!
                 </p>
-                <div className = "border border-Trans20 rounded-xl flex p-2">
-                    <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative">
+                <div className = "border border-Trans20 rounded-xl flex p-2"> 
+                    <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative bg-[url(./images/megaWaves.svg)] bg-[center_bottom_-15rem] bg-no-repeat">
                         <div className = "font-Light text-white flex flex-col gap-10">
                             <p className = "text-4xl">Контактная информация</p>
                             <Contacts image = {Phone} text = "8 800 555 35 35"/>
@@ -107,7 +107,7 @@ function Main()
                             <img src = {Instagram} alt = ""/>
                             <img src = {Discord} alt = ""/>
                         </div>
-                        <img className = "absolute bottom-0 right-0" src = {MegaWaves} alt = ""/>
+                        {/* <img className = "absolute bottom-0 right-0" src = {MegaWaves} alt = ""/> */}
                     </div>
                     <form className = "p-4 flex flex-col justify-center gap-52 items-center">
                         <div>
@@ -123,19 +123,12 @@ function Main()
                     </form>
                 </div>
             </div>
-        </div>
+            <Footer />
+        </main>
     );
 }
 
-function Contacts({image, text})
-{
-    return(
-        <div className = "flex gap-3">
-            <img src = {image} alt = ""/>
-            <p className = "font-Light">{text}</p>
-        </div>
-    );
-}
+
 
 function InputForm({text, type, placeText, w, h})
 {
@@ -155,5 +148,6 @@ function InputForm({text, type, placeText, w, h})
         </div>
     );
 }
+
 
 export default Main;
