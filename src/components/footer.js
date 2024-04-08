@@ -31,10 +31,17 @@ function Footer()
                     <TextMaker name = "Контакты" textArr = {footerText} isContacts="s"/>
                     <TextMaker name = "Компания" textArr = {footerText2}/>
                     <TextMaker name = "Условия использования" textArr = {footerText3}/>
+                    <div className = "bg-white p-3 flex flex-col gap-8">
+                        <p className = "font-Black text-lg">Подпишитесь на рассылку</p>
+                        <div className = "flex">
+                            <input className = "placeholder:font-Light border border-Trans20 pl-1" placeholder = "Ваша почта" type = "text"/>
+                            <button className = "border border-Blue bg-Blue text-white font-Light py-1.5 px-3">Подписаться</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className = "bg-[#2159D7] font-Light text-white text-center py-1.5">
-                DENTIQUE. 2024 
+                DENTIQUE. 2024
             </div>
         </footer>
     );
