@@ -1,21 +1,17 @@
-import Phone from "../images/phone.svg";
-import Mail from "../images/mail.svg";
-import Geo from "../images/geo.svg";
-
 import { Contacts } from "./lilcoms";
 
 const footerText = [
     {
         text: "8 800 555 35 35",
-        image: Phone
+        image: "/media/contacts/phone.svg"
     },
     {
         text: "abc@gmail.com",
-        image: Mail
+        image: "/media/contacts/mail.svg"
     },
     {
         text: "Руставели 33, Санкт-Петербург ",
-        image: Geo
+        image: "/media/contacts/geo.svg"
     },
 ]
 const footerText2 = ["О нас", "Свяжитесь с нами", "События"]

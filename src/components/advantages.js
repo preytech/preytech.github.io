@@ -1,38 +1,31 @@
-import Stars from "../images/stars.svg";
-import Phone12 from "../images/phone12.svg";
-import Microscope from "../images/microscope2.svg";
-import Phone24 from "../images/phone24.svg";
-import Wallet from "../images/wallet.svg";
-import Doctor from "../images/doctor.svg";
-
 const cardData = [
     {
-        image: Stars,
+        image: "/media/advantages/stars.svg",
         name: "5 - средняя оценка",
         desc: "У нас 5-звездочный рейтинг в Google, так что вы можете быть уверены, что получаете наилучший сервис из возможных"
     },
     {
-        image: Phone12,
+        image: "/media/advantages/phone12.svg",
         name: "Рабочий день 12 часов",
         desc: "Клиника работает 7 дней в неделю по 12 часов, и готова оказать вам качественные услуги"
     },
     {
-        image: Microscope,
+        image: "/media/advantages/microscope2.svg",
         name: "Современное оборудование",
         desc: "Наша стоматология оснащена новейшим медицинским оборудованием"
     },
     {
-        image: Phone24,
+        image: "/media/advantages/phone24.svg",
         name: "Онлайн-запись 24/7",
         desc: "Наш сайт готов помочь вам записаться на прием в любое время суток"
     },
     {
-        image: Wallet,
+        image: "/media/advantages/wallet.svg",
         name: "Выгодная цена",
         desc: "Вы можете получить лучшее соотношение цены и качества за свои деньги"
     },
     {
-        image: Doctor,
+        image: "/media/advantages/doctor.svg",
         name: "Сертифицированные врачи",
         desc: "Наши работники  сертифицированные врачи и специалисты, которые используют новейшее оборудование"
     }
