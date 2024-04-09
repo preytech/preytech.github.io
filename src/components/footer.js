@@ -21,9 +21,12 @@ const footerText3 = ["Политика конфиденциальности", "�
 function Footer()
 {
     return(
-        <footer className = "bg-Blue">
+        <footer className = "bg-Blue relative">
             <div className = "container mx-auto">
-                <div className = "w-full h-24"></div>
+                <div className = "w-full h-24 relative">
+                    <img className = "absolute right-[1510px] top-4" src = "/media/footer/bigTransStar.svg" alt = ""/>
+                    <img className = "absolute right-[1570px] top-8" src = "/media/footer/medWhiteStar.svg" alt = ""/>
+                </div>
                 <div className = "flex justify-between pt-6 pb-14 border-t border-white items-start">
                     <TextMaker name = "Контакты" textArr = {footerText} isContacts="s"/>
                     <TextMaker name = "Компания" textArr = {footerText2}/>
@@ -40,6 +43,7 @@ function Footer()
             <div className = "bg-[#2159D7] font-Light text-white text-center py-1.5">
                 DENTIQUE. 2024
             </div>
+            <img className = "absolute bottom-0 right-0" src = "/media/footer/bigWaves.svg" alt = ""/>
         </footer>
     );
 }

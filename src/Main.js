@@ -1,8 +1,6 @@
-import Header from './components/header';
 import Cards from "./components/SalesCards";
 import Advantages from './components/advantages';
 import Form from "./components/form";
-import Footer from "./components/footer";
 
 import './App.css';
 
@@ -12,7 +10,6 @@ function Main()
 {
     return(
         <main className="bg-[#F9F9FA]">
-            <Header />
             <p className = "container mx-auto text-Gray font-Light">Стоматологические услуги по бюджетным ценам</p>
             <div className = "flex justify-between container mx-auto py-5">
                 <div className = "flex flex-col justify-center gap-12">
@@ -57,26 +54,31 @@ function Main()
                 <img className = "absolute left-0 top-0" src = "/media/heroPage/leftWaves.svg" alt = ""/>
                 <img className = "absolute right-0 top-0" src = "/media/heroPage/rightWaves.svg" alt = ""/>
             </div>
-            <div className = "pt-40 flex flex-col items-center">
+            <div className = "pt-40 flex flex-col items-center relative">
                 <p className = "font-Black text-Black text-6xl pb-10 relative">
                     Акции и предложения
                     <img className = "absolute bottom-28 left-64" src = "/media/sales/blackBigStar.svg" alt = ""/>
                 </p>
                 <Cards/>
+                <img className = "absolute left-0 bottom-0" src = "/media/sales/blueCircle.svg" alt = ""/>
             </div>
-            <div className = "pt-40 flex flex-col items-center">
-                <p className = "font-Black text-Black text-6xl pb-10">
+            <div className = "pt-40 flex flex-col items-center relative">
+                <p className = "font-Black text-Black text-6xl pb-10 relative">
                     Почему люди выбирают нас?
+                    <img className = "absolute bottom-28 right-[400px]" src = "/media/advantages/bigTransStar.svg" alt = ""/>
                 </p>
                 <Advantages/>
+                <img className = "absolute right-0 bottom-0" src = "/media/advantages/blueCircle.svg" alt = ""/>
             </div>
-            <div className = "py-40 flex flex-col items-center">
-                <p className = "font-Black text-Black text-6xl pb-10">
+            <div className = "py-40 flex flex-col items-center relative">
+                <p className = "font-Black text-Black text-6xl pb-10 relative">
                     Свяжитесь с нами!
+                    <img className = "absolute bottom-28 right-56" src = "/media/form/bigBlackStar.svg" alt = ""/>
                 </p>
                 <Form/>
+                <img className = "absolute left-52 top-36" src = "/media/form/blackCircle.svg" alt = ""/>
+                <img className = "absolute right-56 bottom-20" src = "/media/form/blueRing.svg" alt = ""/>
             </div>
-            <Footer />
         </main>
     );
 }

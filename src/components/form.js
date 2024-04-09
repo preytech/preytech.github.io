@@ -3,7 +3,7 @@ import { Contacts } from "./lilcoms";
 function Form()
 {
     return(
-        <div className = "border border-Trans20 rounded-xl flex p-2"> 
+        <div className = "border border-Trans20 bg-white rounded-xl flex p-2 z-10"> 
             <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative">
                 <div className = "font-Light text-white flex flex-col gap-10">
                     <p className = "text-4xl">Контактная информация</p>
