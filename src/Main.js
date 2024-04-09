@@ -74,8 +74,8 @@ function Main()
                     <p className = "text-5xl font-Bold">600+</p>
                     <p className = "text-Trans76 font-Light">Довольных клиенов</p>
                 </div>
-                <img className = "absolute left-0 top-0" src = {LeftWaves} alt = "бля.."/>
-                <img className = "absolute right-0 top-0" src = {RightWaves} alt = "бля.."/>
+                <img className = "absolute left-0 top-0" src = {LeftWaves} alt = ""/>
+                <img className = "absolute right-0 top-0" src = {RightWaves} alt = ""/>
             </div>
             <div className = "pt-40 flex flex-col items-center">
                 <p className = "font-Black text-Black text-6xl pb-10 relative">

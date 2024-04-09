@@ -27,13 +27,14 @@ function Footer()
     return(
         <footer className = "bg-Blue">
             <div className = "container mx-auto">
-                <div className = "flex">
+                <div className = "w-full h-24"></div>
+                <div className = "flex justify-between pt-6 pb-14 border-t border-white items-start">
                     <TextMaker name = "Контакты" textArr = {footerText} isContacts="s"/>
                     <TextMaker name = "Компания" textArr = {footerText2}/>
                     <TextMaker name = "Условия использования" textArr = {footerText3}/>
-                    <div className = "bg-white p-3 flex flex-col gap-8">
+                    <div className = "bg-white p-3 flex flex-col gap-6 rounded-xl">
                         <p className = "font-Black text-lg">Подпишитесь на рассылку</p>
-                        <div className = "flex">
+                        <div className = "flex pb-4">
                             <input className = "placeholder:font-Light border border-Trans20 pl-1" placeholder = "Ваша почта" type = "text"/>
                             <button className = "border border-Blue bg-Blue text-white font-Light py-1.5 px-3">Подписаться</button>
                         </div>
@@ -58,7 +59,7 @@ function TextMaker({name, textArr, isContacts})
 
     return (
         <div className = "text-white font-Light flex flex-col gap-4">
-            <p>{name}</p>
+            <p className = "font-Bold">{name}</p>
             {elems}
         </div>
     );

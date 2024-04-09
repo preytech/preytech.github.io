@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import { Button } from './lilcoms';
 
 const links = [
@@ -30,7 +29,7 @@ function Header()
         <header className = "border-b border-Trans20 px-16 py-3 bg-white">
             <div className='flex justify-between items-center container mx-auto'> 
                 <div className = "flex items-center gap-1.5">
-                    <img className = "w-8" src = {logo} alt = ""/>
+                    <img className = "w-8" src = "/media/header/logo.svg" alt = ""/>
                     <p className = "font-Black text-4xl text-Blue">DENTIQUE</p>
                 </div>
                 <nav className = "flex gap-16">
