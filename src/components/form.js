@@ -4,7 +4,7 @@ function Form()
 {
     return(
         <div className = "border border-Trans20 rounded-xl flex p-2"> 
-            <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative bg-[url(/media/form/megaWaves.svg)] bg-[center_bottom_-15rem] bg-no-repeat">
+            <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative">
                 <div className = "font-Light text-white flex flex-col gap-10">
                     <p className = "text-4xl">Контактная информация</p>
                     <Contacts image = "/media/contacts/phone.svg" text = "8 800 555 35 35"/>
@@ -16,6 +16,7 @@ function Form()
                     <img src = "/media/contacts/instagram.svg" alt = ""/>
                     <img src = "/media/contacts/discord.svg" alt = ""/>
                 </div>
+                <img className = "absolute bottom-0 w-max" src = "/media/form/megaWaves.svg" alt = ""/>
             </div>
             <form className = "p-4 flex flex-col justify-center gap-52 items-center">
                 <div>

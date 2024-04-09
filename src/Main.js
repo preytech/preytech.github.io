@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 
 import './App.css';
 
-import { Button, Contacts } from './components/lilcoms';
+import { Button } from './components/lilcoms';
 
 function Main()
 {
