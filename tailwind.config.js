@@ -16,7 +16,8 @@ module.exports = {
         "Gray2": "#616161",
         "Gray3": "#5A7184",
         "Trans76": "#FFFFFF76",
-        "Trans20": "#00000020"
+        "Trans20": "#00000020",
+        "BgWhite": "#F9F9FA"
       },
       backgroundImage: {
         'Kid': "url('./images/kid.png')",

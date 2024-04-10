@@ -1,4 +1,4 @@
-import { Button } from "./lilcoms";
+import { Button, FormatterToRubbles } from "./lilcoms";
 
 function Cards()
 {
@@ -38,12 +38,6 @@ function Cards()
 
 function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, isBlue})
 {
-    const formatter = new 
-        Intl.NumberFormat("ru-RU", { 
-            style: "currency",
-            currency: "RUB",
-        });
-
     let blueBlock;
     let button = <Button text = "Запись" font = "Bold" arrow = "/media/buttons/mainButtonArrow.svg"/>;
     let borderColor = "Trans20";
@@ -66,8 +60,8 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
             </div>
             <div className = "p-6">
                 <div className = "flex font-Bold justify-end gap-5 text-lg">
-                    <p className = "line-through text-Gray2 decoration-Gray2">{formatter.format(priceNoDiscount)}</p>
-                    <p className = "text-Blue">{formatter.format(priceDiscount)}</p>
+                    <p className = "line-through text-Gray2 decoration-Gray2"><FormatterToRubbles price = {priceNoDiscount}/></p>
+                    <p className = "text-Blue"><FormatterToRubbles price = {priceDiscount}/></p>
                 </div>
                 <div className = "flex flex-col gap-2 justify-center w-72">
                     <p className = "font-Bold text-2xl text-center">{name}</p>

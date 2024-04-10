@@ -4,7 +4,7 @@ import Form from "./components/form";
 
 import './App.css';
 
-import { Button } from './components/lilcoms';
+import { Button, CustomH } from './components/lilcoms';
 
 function Main()
 {
@@ -55,26 +55,17 @@ function Main()
                 <img className = "absolute right-0 top-0" src = "/media/heroPage/rightWaves.svg" alt = ""/>
             </div>
             <div className = "pt-40 flex flex-col items-center relative">
-                <p className = "font-Black text-Black text-6xl pb-10 relative">
-                    Акции и предложения
-                    <img className = "absolute bottom-28 left-64" src = "/media/sales/blackBigStar.svg" alt = ""/>
-                </p>
+                <CustomH text = "Акции и предложения" star = "/media/sales/blackBigStar.svg"/>
                 <Cards/>
                 <img className = "absolute left-0 bottom-0" src = "/media/sales/blueCircle.svg" alt = ""/>
             </div>
             <div className = "pt-40 flex flex-col items-center relative">
-                <p className = "font-Black text-Black text-6xl pb-10 relative">
-                    Почему люди выбирают нас?
-                    <img className = "absolute bottom-28 right-[400px]" src = "/media/advantages/bigTransStar.svg" alt = ""/>
-                </p>
+                <CustomH text = "Почему люди выбирают нас?" star = "/media/advantages/bigTransStar.svg"/>
                 <Advantages/>
                 <img className = "absolute right-0 bottom-0" src = "/media/advantages/blueCircle.svg" alt = ""/>
             </div>
             <div className = "py-40 flex flex-col items-center relative">
-                <p className = "font-Black text-Black text-6xl pb-10 relative">
-                    Свяжитесь с нами!
-                    <img className = "absolute bottom-28 right-56" src = "/media/form/bigBlackStar.svg" alt = ""/>
-                </p>
+                <CustomH text = "Свяжитесь с нами!" star = "/media/form/bigBlackStar.svg"/>
                 <Form/>
                 <img className = "absolute left-52 top-36" src = "/media/form/blackCircle.svg" alt = ""/>
                 <img className = "absolute right-56 bottom-20" src = "/media/form/blueRing.svg" alt = ""/>
