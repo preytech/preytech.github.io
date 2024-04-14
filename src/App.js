@@ -1,8 +1,9 @@
-import Main from './Main';
 import Header from './components/header';
 import Footer from './components/footer';
-import Servises from './Servises';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Main from './Main';
+import Servises from './Servises';
+import Doctors from './Doctors';
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: "/servises",
                 element: <Servises/>,
+            },
+            {
+                path: "/doctors",
+                element: <Doctors/>,
             },
         ]
     },

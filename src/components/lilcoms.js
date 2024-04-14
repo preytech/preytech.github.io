@@ -44,8 +44,7 @@ export function CustomH({text, star})
 
 export function FormatterToRubbles({price})
 {
-    const formatter = new 
-    Intl.NumberFormat("ru-RU", { 
+    const formatter = new Intl.NumberFormat("ru-RU", { 
         style: "currency",
         currency: "RUB",
     });

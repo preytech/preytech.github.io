@@ -8,7 +8,7 @@ const links = [
     },
     {
         text: "Врачи",
-        url: "/",
+        url: "/doctors",
     },
     {
         text: "О нас",
