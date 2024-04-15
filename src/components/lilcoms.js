@@ -1,4 +1,6 @@
-export function Button({text, font, isBlue, arrow})
+import { Link } from "react-router-dom";
+
+export function Button({text, font, isBlue, arrow, link})
 {
     let styles = " border-Blue border bg-BgWhite rounded-md text-black";
     let gap = " gap-0"
@@ -14,10 +16,12 @@ export function Button({text, font, isBlue, arrow})
     } 
 
     return(
-          <button className = {"px-10 flex items-center py-2.5 font-" + font + styles + gap}>
-              {text}
-              <img src = {arrow} alt = ""/>
-          </button>
+        <Link to = {link}>
+            <button className = {"px-10 flex items-center py-2.5 font-" + font + styles + gap}>
+                {text}
+                <img src = {arrow} alt = ""/>
+            </button>
+        </Link>
     );
 }
 

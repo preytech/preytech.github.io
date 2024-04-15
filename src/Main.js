@@ -10,15 +10,15 @@ function Main()
 {
     return(
         <main className="bg-[#F9F9FA]">
-            <p className = "container mx-auto text-Gray font-Light">Стоматологические услуги по бюджетным ценам</p>
             <div className = "flex justify-between container mx-auto py-5">
                 <div className = "flex flex-col justify-center gap-12">
-                    <div className = "font-Black text-8xl flex flex-col gap-[30px]">
+                    <div className = "font-Black text-8xl flex flex-col gap-7">
+                        <p className = "text-Gray font-Light text-lg">Стоматологические услуги по бюджетным ценам</p>
                         <p>Ваша улыбка -</p>
                         <p className = "text-Blue">наш приоритет</p>
                     </div>
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
-                            <Button text = "Каталог услуг" font = "Light" isBlue = "yes"/>
+                            <Button text = "Каталог услуг" font = "Light" isBlue = "yes" link = "/servises"/>
                             <Button text = "Подробнее" font = "Light" arrow = "/media/buttons/mainButtonArrow.svg"/>
                             <img className = "absolute bottom-28 left-3.5" src = "/media/heroPage/blackMicroStar1.svg" alt = ""/>
                             <img className = "absolute top-20 right-56" src = "/media/blueMicroStar1.svg" alt = ""/>

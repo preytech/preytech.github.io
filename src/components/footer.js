@@ -31,7 +31,7 @@ function Footer()
                     <TextMaker name = "Контакты" textArr = {footerText} isContacts="s"/>
                     <TextMaker name = "Компания" textArr = {footerText2}/>
                     <TextMaker name = "Условия использования" textArr = {footerText3}/>
-                    <div className = "bg-white p-3 flex flex-col gap-6 rounded-xl">
+                    <div className = "bg-white p-3 flex flex-col gap-6 rounded-xl z-10">
                         <p className = "font-Black text-lg">Подпишитесь на рассылку</p>
                         <div className = "flex pb-4">
                             <input className = "placeholder:font-Light border border-Trans20 pl-1" placeholder = "Ваша почта" type = "text"/>
