@@ -52,8 +52,8 @@ function Servises()
 function Servise({name, price, image})
 {
     return(
-        <div className = "flex flex-col items-center gap-4 z-10">
-            <p className = "font-Black text-2xl">{name}</p>
+        <div className = "flex flex-col items-center gap-4 z-10 border border-Trans20 p-8 rounded-xl">
+            <p className = "font-Black text-2xl w-96 text-center">{name}</p>
             <p className = "font-Light text-Gray3">от <FormatterToRubbles price = {price}/></p>
             <img className = "pb-8" src = {image} alt = ""/>
             <Button text = "Запись" font = "Bold" arrow = "/media/buttons/mainButtonArrow.svg"/>

@@ -11,7 +11,7 @@ function Form()
                     <Contacts image = "/media/contacts/mail.svg" text = "abc@gmail.com"/>
                     <Contacts image = "/media/contacts/geo.svg" text = "Руставели 33, Санкт-Петербург"/>
                 </div>
-                <div className = "flex gap-4">
+                <div className = "flex gap-4 z-10">
                     <img src = "/media/contacts/twitter.svg" alt = ""/>
                     <img src = "/media/contacts/instagram.svg" alt = ""/>
                     <img src = "/media/contacts/discord.svg" alt = ""/>

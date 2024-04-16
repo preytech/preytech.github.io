@@ -12,16 +12,8 @@ const links = [
     },
     {
         text: "О нас",
-        url: "/contacts",
-    },
-    {
-        text: "Отзывы",
         url: "/about",
-    },
-    {
-        text: "Контакты",
-        url: "/about",
-    },
+    }
 ];
 
 function Header()
