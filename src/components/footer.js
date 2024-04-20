@@ -14,6 +14,7 @@ const footerText = [
         image: "/media/contacts/geo.svg"
     },
 ]
+
 const footerText2 = ["О нас", "Свяжитесь с нами", "События"]
 const footerText3 = ["Политика конфиденциальности", "Условия и услуги", "Политика возврата"]
 
@@ -34,7 +35,7 @@ function Footer()
                     <div className = "bg-white p-3 flex flex-col gap-6 rounded-xl z-10">
                         <p className = "font-Black text-lg">Подпишитесь на рассылку</p>
                         <div className = "flex pb-4">
-                            <input className = "placeholder:font-Light border border-Trans20 pl-1" placeholder = "Ваша почта" type = "text"/>
+                            <input className = "placeholder:font-Light border border-Trans20 pl-1" placeholder = "Ваша почта" type = "email"/>
                             <button className = "border border-Blue bg-Blue text-white font-Light py-1.5 px-3">Подписаться</button>
                         </div>
                     </div>

@@ -23,10 +23,10 @@ function Form()
                     <div className = "grid grid-cols-2 grid-rows-2 gap-8 pb-8">
                         <InputForm text = "Имя" type = "text" placeText = "Олег"/>
                         <InputForm text = "Фамилия" type = "text" placeText = "Иванов"/>
-                        <InputForm text = "Почта" type = "text" placeText = "abc@gmail.com"/>
+                        <InputForm text = "Почта" type = "email" placeText = "abc@gmail.com"/>
                         <InputForm text = "Номер телефона" type = "text" placeText = "8 800 555 35 35"/>
                     </div>
-                    <InputForm text = "Сообщение" type = "text" placeText = "Напишите ваше сообщение" w = "full" h = "10"/>
+                    <InputForm text = "Сообщение" type = "text" placeText = "Напишите ваше сообщение" w = "full"/>
                 </div>
                 <input className = "px-10 flex items-center py-2.5 font-Light bg-Blue rounded-md text-white" type = "submit"/>
             </form>
@@ -34,15 +34,14 @@ function Form()
     );
 }
 
-function InputForm({text, type, placeText, w, h})
+export function InputForm({text, type, placeText, w})
 {
     let width = "72";
     let height = "10";
 
-    if (w && h)
+    if (w)
     {
         width = w;
-        height = h;
     }
 
     return(
