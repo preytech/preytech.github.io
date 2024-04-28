@@ -51,17 +51,10 @@ function Footer()
 
 function TextMaker({name, textArr, isContacts})
 {
-    let elems = textArr.map((elem, i) => { return <p key = {i}>{elem}</p> });
-
-    if(isContacts)
-    {
-        elems = textArr.map((elem, i) => { return <Contacts image = {elem.image} text = {elem.text} key = {i}/>});
-    }
-
     return (
         <div className = "text-white font-Light flex flex-col gap-4">
             <p className = "font-Bold">{name}</p>
-            {elems}
+            {isContacts ? textArr.map((elem, i) => { return <Contacts image = {elem.image} text = {elem.text} key = {i}/>}) : textArr.map((elem, i) => { return <p key = {i}>{elem}</p> })}
         </div>
     );
 }

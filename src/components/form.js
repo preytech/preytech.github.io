@@ -36,18 +36,10 @@ function Form()
 
 export function InputForm({text, type, placeText, w})
 {
-    let width = "72";
-    let height = "10";
-
-    if (w)
-    {
-        width = w;
-    }
-
     return(
         <div className = "flex flex-col gap-2">
             <label>{text}</label>
-            <input className = {"border border-Trans20 w-" + width + " h-" + height + " rounded-md placeholder:font-Light placeholder:text-Gray3 placeholder:pl-2"} type = {type} placeholder = {placeText} />
+            <input className = {"border border-Trans20 w-" + (w ? w : "72") + " h-10 rounded-md placeholder:font-Light placeholder:text-Gray3 placeholder:pl-2"} type = {type} placeholder = {placeText} />
         </div>
     );
 }

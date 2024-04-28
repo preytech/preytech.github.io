@@ -2,22 +2,13 @@ import { Link } from "react-router-dom";
 
 export function Button({text, font, isBlue, arrow, link})
 {
-    let styles = " border-Blue border bg-BgWhite rounded-md text-black";
-    let gap = " gap-0"
-
-    if (isBlue)
-    {
-        styles = " bg-Blue rounded-md text-white";
-    }
-
-    if (arrow)
-    {
-        gap = " gap-2"
-    } 
-
+    console.log(isBlue);
+    console.log(arrow);
     return(
         <Link to = {link}>
-            <button className = {"px-10 flex items-center py-2.5 font-" + font + styles + gap}>
+            <button className = {"px-10 flex items-center py-2.5 font-" + font 
+            + (isBlue ? " bg-Blue rounded-md text-white" : " border-Blue border bg-BgWhite rounded-md text-black")
+            + (arrow ? " gap-2" : " gap-0")}>
                 {text}
                 <img src = {arrow} alt = ""/>
             </button>

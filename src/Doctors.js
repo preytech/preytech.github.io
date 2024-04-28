@@ -98,14 +98,9 @@ function SimpleSlider() {
 
 function DoctorCard({name, photo, desc})
 {
-    if (!photo)
-    {
-        photo = "/media/doctors/doctor0.svg";
-    }
-
     return(
         <div className = "flex border gap-10 border-Trans20 p-10 rounded-xl justify-between mx-4">
-            <img className = "w-3/4" src = {photo} alt = ""/>
+            <img className = "w-3/4" src = {photo ? photo : "/media/doctors/doctor0.svg"} alt = ""/>
             <div className = "flex flex-col gap-8 justify-center">
                 <p className = "font-Bold text-6xl">{name}</p>
                 <div className = "flex gap-2">
