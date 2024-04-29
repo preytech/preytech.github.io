@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 
 export function Button({text, font, isBlue, arrow, link})
 {
-    console.log(isBlue);
-    console.log(arrow);
     return(
         <Link to = {link}>
             <button className = {"px-10 flex items-center py-2.5 font-" + font 
