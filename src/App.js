@@ -5,6 +5,7 @@ import Main from './Main';
 import Servises from './Servises';
 import Doctors from './Doctors';
 import About from './About';
+import Servise from './Servise';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About/>,
+            },
+            {
+                path: "/servise",
+                element: <Servise/>,
             },
         ]
     },

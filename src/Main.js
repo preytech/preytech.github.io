@@ -19,7 +19,7 @@ function Main()
                     </div>
                         <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
                             <Button text = "Каталог услуг" font = "Light" isBlue = "yes" link = "/servises"/>
-                            <Button text = "Подробнее" font = "Light" arrow = "/media/buttons/mainButtonArrow.svg"/>
+                            <Button text = "Подробнее" font = "Light" arrow = "/media/buttons/mainButtonArrow.svg" link = "/about"/>
                             <img className = "absolute bottom-28 left-3.5" src = "/media/heroPage/blackMicroStar1.svg" alt = ""/>
                             <img className = "absolute top-20 right-56" src = "/media/blueMicroStar1.svg" alt = ""/>
                             <img className = "absolute left-56 top-20" src = "/media/heroPage/blueArrow.svg" alt = ""/>
