@@ -39,7 +39,7 @@ function Cards()
 function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, isBlue})
 {
     let blueBlock;
-    let button = <Button text = "Запись" font = "Bold" arrow = "/media/buttons/mainButtonArrow.svg" link = "/service"/>;
+    let button = <Button text = "Запись" font = "Bold" arrow = "/media/buttons/mainButtonArrow.svg" link = "/servise"/>;
     let borderColor = "Trans20";
 
     if (isBlue)
@@ -49,7 +49,7 @@ function Card({priceNoDiscount, priceDiscount, name, desc, list1, list2, list3, 
             <img src = "/media/sales/whiteMicroStar1.svg" className = "absolute top-1 right-20" alt = ""/>
         </div>
 
-        button = <Button text = "Запись" font = "Bold" isBlue = "yes" arrow = "/media/buttons/whiteButtonArrow.svg" link = "/service"/>;
+        button = <Button text = "Запись" font = "Bold" isBlue = "yes" arrow = "/media/buttons/whiteButtonArrow.svg" link = "/servise"/>;
         borderColor = "Blue";
     }
 

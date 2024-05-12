@@ -75,7 +75,7 @@ function Servise({name, categories})
 
     let links = categories.split("%");
     let justLink =
-    <Link to = "/service">
+    <Link to = "/servise">
         <div className = "flex justify-start items-center text-center cursor-pointer select-none z-10 border w-[1000px] border-Trans20 p-6 rounded-xl">
             <p className = "font-Black text-2xl">{name}</p>
         </div>
@@ -100,7 +100,7 @@ function Servise({name, categories})
 
 function ServiseLink({text})
 {
-    return <Link to = "/service">{text}</Link>;
+    return <Link to = "/servise">{text}</Link>;
 }
 
 export default Servises;
