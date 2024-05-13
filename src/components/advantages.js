@@ -35,7 +35,7 @@ function Advantages()
 {
     return(
         <div className = "grid grid-rows-2 grid-cols-3 gap-10">
-            { cardData.map((elem, i) => { return <Card image = {elem.image} name = {elem.name} desc = {elem.desc}/>}) }
+            { cardData.map((elem, i) => { return <Card image = {elem.image} name = {elem.name} desc = {elem.desc} key = {i}/>}) }
         </div>
             
         );
@@ -44,10 +44,10 @@ function Advantages()
 function Card({image, name, desc})
 {
     return(
-        <div className = "flex flex-col items-center p-10 border border-Trans20 rounded-xl justify-center">
+        <div className = "flex flex-col items-center p-10 border border-Trans20 rounded-xl  justify-center">
             <img className = "w-20" src = {image} alt = ""/>
             <p className = "font-Bold text-lg w-52 text-center py-2 leading-tight">{name}</p>
-            <p className = "font-Light text-Gray3 text-sm w-48 text-center">{desc}</p>
+            <p className = "font-Light  text-sm w-48 text-Gray3 text-center">{desc}</p>
         </div>
     );
 }

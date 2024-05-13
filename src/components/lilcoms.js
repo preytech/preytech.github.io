@@ -27,7 +27,7 @@ export function Contacts({image, text})
 export function CustomH({text, star})
 {
     return(
-        <p className = "font-Black text-Black text-6xl pb-10 relative">
+        <p className = "font-Black text-Black text-6xl pb-10 relative text-center">
             {text}
             <img className = "absolute bottom-28  inset-x-2/4" src = {star} alt = ""/>
         </p>

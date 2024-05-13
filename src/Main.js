@@ -10,29 +10,29 @@ function Main()
 {
     return(
         <main className="bg-[#F9F9FA]">
-            <div className = "flex justify-between container mx-auto py-5">
+            <div className = "flex justify-between container mx-auto py-5 ">
                 <div className = "flex flex-col justify-center gap-12">
-                    <div className = "font-Black text-8xl flex flex-col gap-7">
+                    <div className = "font-Black 2xl:text-8xl xl:text-7xl lg:text-6xl flex flex-col gap-7">
                         <p className = "text-Gray font-Light text-lg">Стоматологические услуги по бюджетным ценам</p>
                         <p>Ваша улыбка -</p>
                         <p className = "text-Blue">наш приоритет</p>
                     </div>
-                        <div className = "w-[250px] flex flex-col gap-[20px] items-center font-Light relative">
+                        <div className = "flex gap-8 font-Light relative items-center">
                             <Button text = "Каталог услуг" font = "Light" isBlue = "yes" link = "/servises"/>
                             <Button text = "Подробнее" font = "Light" arrow = "/media/buttons/mainButtonArrow.svg" link = "/about"/>
-                            <img className = "absolute bottom-28 left-3.5" src = "/media/heroPage/blackMicroStar1.svg" alt = ""/>
-                            <img className = "absolute top-20 right-56" src = "/media/blueMicroStar1.svg" alt = ""/>
-                            <img className = "absolute left-56 top-20" src = "/media/heroPage/blueArrow.svg" alt = ""/>
+                            <img className = "absolute top-0 right-48" src = "/media/heroPage/blueArrow.svg" alt = ""/>
+                            <img className = "absolute top-10 left-24" src = "/media/heroPage/blackArrow.svg" alt = ""/>
                         </div>
-                    <div className = "relative w-[160px] flex self-center text-sm">
-                        <p className = "font-Light">Начните знакомство с нашей стоматологией выгодно</p>
-                        <img className = "absolute right-[30px] bottom-[57px]" src = "/media/heroPage/blackMicroStar2.svg" alt = ""/>
-                        <img className = "absolute bottom-[7px] right-[165px]" src = "/media/heroPage/blueMicroStar2.svg" alt = ""/>
+                    <div className = "relative flex justify-end pr-24 text-sm">
+                        <p className = "font-Light text-Blue w-40 top-0 absolute">Начните знакомство с нашей стоматологией выгодно</p>
+                        <p className = "font-Light w-40 left-10 top-6 absolute">Хватит стоять в очередях запишитесь онлайн сейчас!</p>
+                        <img className = "absolute right-64 bottom-0" src = "/media/heroPage/blackMicroStar2.svg" alt = ""/>
+                        <img className = "absolute top-2 left-6" src = "/media/heroPage/blueMicroStar2.svg" alt = ""/>
                     </div>
                 </div>            
                 <div className = "relative">
-                    <img className = "rounded-full w-[580px] h-[580px] object-cover" src = "/media/heroPage/kid.webp" alt = ""/>
-                    <img className = "absolute top-12 left-[420px] object-cover rounded-full" src = "/media/heroPage/blackCircle.svg" alt = ""/>
+                    <img className = "rounded-full flex shrink w-[580px] h-[580px] object-cover" src = "/media/heroPage/kid.webp" alt = ""/>
+                    <img className = "absolute 2xl:top-12 2xl:left-[420px] xl:top-0 xl:left-88 object-cover rounded-full" src = "/media/heroPage/blackCircle.svg" alt = ""/>
                     <img className = "absolute top-5 left-5" src = "/media/heroPage/whiteStar1.svg" alt = ""/>
                     <img className = "absolute top-[90px] left-0" src = "/media/heroPage/blackMiniStar1.svg" alt = ""/>
                     <img className = "absolute bottom-6 left-6" src = "/media/heroPage/blueRing.svg" alt = ""/>
