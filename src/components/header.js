@@ -40,7 +40,7 @@ function Header()
                 <form className = "flex flex-col gap-4 items-center">
                     <InputForm text = "Имя" type = "text" placeText = "Олег"/>
                     <InputForm text = "Номер телефона" type = "text" placeText = "8 800 555 35 35"/>
-                    <input className = "px-10 flex items-center py-2.5 font-Light bg-Blue rounded-md text-white" type = "submit"/>
+                    <input className = "px-10 flex items-center transition duration-150 border border-Blue py-2.5 font-Light bg-Blue rounded-md text-white hover:bg-white hover:text-black " type = "submit"/>
                 </form>
                 <p onClick = {closeModal} className = "cursor-pointer absolute top-0 right-4">x</p>
             </div>
@@ -70,7 +70,7 @@ function Header()
 }
 
 function LinkCustomized({text, url}) {
-    return <div className = "font-Light text-sm text-Gray hover:text-black"><Link to = {url}>{text}</Link></div>
+    return <div className = "font-Light transition duration-150 text-sm text-Gray hover:text-black"><Link to = {url}>{text}</Link></div>
 }
 
 export default Header;

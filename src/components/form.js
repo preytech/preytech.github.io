@@ -28,7 +28,7 @@ function Form()
                     </div>
                     <InputForm text = "Сообщение" type = "text" placeText = "Напишите ваше сообщение" w = "full"/>
                 </div>
-                <input className = "px-10 flex items-center py-2.5 font-Light bg-Blue rounded-md text-white" type = "submit"/>
+                <input className = "px-10 flex items-center transition duration-150 border border-Blue py-2.5 font-Light bg-Blue rounded-md text-white hover:bg-white hover:text-black " type = "submit"/>
             </form>
         </div>
     );
