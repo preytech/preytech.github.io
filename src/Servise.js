@@ -71,20 +71,20 @@ function Servise()
 
     return(
         <div className = "bg-BgWhite">
-            <div className = "container mx-auto py-28 flex flex-col items-center gap-20">
+            <div className = "container mx-auto py-28 flex flex-col items-center gap-10">
                 <CustomH text = "Конcультация у стоматолога" star="/media/advantages/bigTransStar.svg"/>
                 <div className = "flex w-full justify-around items-center">
                     <p className = "font-Light text-Gray3 text-xl w-[650px]">Консультация у стоматолога — это первый шаг к здоровью вашей улыбки. Во время консультации врач-стоматолог уточняет жалобы пациента, проводит диагностику полости рта и составляет план лечения. Это помогает врачу подобрать оптимальные методы лечения, учитывая индивидуальные особенности пациента и его пожелания. <br/>Консультация у стоматолога — это возможность для пациента получить профессиональную помощь и рекомендации от опытного специалиста. Во время консультации стоматолог изучает состояние зубов и дёсен пациента, определяет наличие кариеса, заболеваний пародонта и других проблем. Врач также может предложить различные методы профилактики и гигиены полости рта, а также порекомендовать средства для ухода за зубами и дёснами.</p>
                     <img className = "w-[450px] h-[450px]" src = "/media/servise/doctor.webp" alt = ""/>
                 </div>
-                <div className = "border border-Trans20 rounded-xl p-4 flex justify-between items-end w-2/3">
-                    <div className = "bg-Blue rounded-xl p-2 text-white flex flex-col gap-4 pr-20">
+                <div className = "rounded-xl flex justify-between p-4 items-end w-2/3 bg-Blue">
+                    <div className = "bg-Blue rounded-xl p-2 text-white flex flex-col gap-4 pr-20 ">
                         <Contacts image = "/media/contacts/phone.svg" text = "8 800 555 35 35"/>
                         <Contacts image = "/media/contacts/mail.svg" text = "abc@gmail.com"/>
                         <Contacts image = "/media/contacts/geo.svg" text = "Руставели 33, Санкт-Петербург"/>
                     </div>
-                    <div onClick = {openModal} className = "pb-6 pr-10">
-                        <Button text = "Запись" font = "Bold" isBlue = "yes"/>
+                    <div onClick = {openModal} className = "pb-6 pr-10 m-4">
+                        <Button text = "Запись" font = "Bold" isBlue = {false}/>
                     </div>
                 </div>
                 <div className = "font-Light text-xl text-Gray3 flex flex-col gap-4 border border-Trans20 rounded-xl py-6 w-2/3">

@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { Contacts } from "./lilcoms";
+import Snackbar from '@mui/material/Snackbar';
 
 function Form()
 {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function onClickHandler(e)
+    {
+        e.preventDefault();
+        setIsOpen(true);
+    }
+
     return(
         <div className = "border border-Trans20 bg-white rounded-xl flex p-2 z-10"> 
             <div className = "bg-Blue rounded-xl p-8 w-[550px] flex flex-col gap-80 relative">
@@ -28,7 +38,13 @@ function Form()
                     </div>
                     <InputForm text = "Сообщение" type = "text" placeText = "Напишите ваше сообщение" w = "full"/>
                 </div>
-                <input className = "px-10 flex items-center transition duration-150 border border-Blue py-2.5 font-Light bg-Blue rounded-md text-white hover:bg-white hover:text-black " type = "submit"/>
+                <input onClick={onClickHandler} className = "px-10 flex items-center transition duration-150 border border-Blue py-2.5 font-Light bg-Blue rounded-md text-white hover:bg-white hover:text-black " type = "submit"/>
+                <Snackbar
+                    open={isOpen}
+                    autoHideDuration={6000}
+                    onClose={() => setIsOpen(false)}
+                    message="Данные отправлены"
+                />
             </form>
         </div>
     );
